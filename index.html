@@ -5,11 +5,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description"
-        content="AltFixer automatically generates alt text for every image on your website. Improve accessibility, SEO, and legal compliance in minutes." />
+        content="AltFixer is an Austin-based team helping websites improve accessibility and SEO with precision-written AI-generated alt text. One file. No complexity." />
     <meta name="keywords"
-        content="Alt text generator, ADA compliance, SEO image text, WCAG tool, web accessibility service" />
-    <meta name="author" content="AltFixer" />
-    <title>AltFixer – Automated Alt Text for Websites</title>
+        content="AltFixer, alt text generator, accessibility SEO, WCAG ADA compliance, Austin TX web accessibility, image alt generator" />
+    <meta name="author" content="AltFixer – Built in Austin, TX" />
+    <title>AltFixer | Instantly Fix Missing Alt Text for SEO & Accessibility</title>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="AltFixer – AI-Generated Alt Text for Accessibility & SEO" />
+    <meta property="og:description"
+        content="Built in Austin, TX – AltFixer gives you WCAG-compliant alt text for every image on your website. No logins. No plugins. No mess." />
+    <meta property="og:image" content="https://altfixer.com/og-image.png" />
+    <meta property="og:url" content="https://altfixer.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- SEO + Icons -->
+    <link rel="canonical" href="https://altfixer.com/" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="manifest" href="/site.webmanifest" />
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -21,6 +35,23 @@
             font-family: 'Inter', sans-serif;
         }
     </style>
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "AltFixer",
+    "url": "https://altfixer.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Austin",
+      "addressRegion": "TX",
+      "addressCountry": "US"
+    },
+    "description": "AltFixer is a small team from Austin, TX building tools for accessibility and SEO compliance. We help businesses generate WCAG-compliant alt text automatically."
+  }
+  </script>
+
 </head>
 
 <body class="bg-white text-gray-900">
@@ -29,139 +60,216 @@
     <header class="w-full border-b border-gray-100">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="text-lg font-semibold">AltFixer</div>
-            <a href="#start"
+            <a href="#start" title="Jump to pricing section"
                 class="bg-blue-600 text-white px-5 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition">Get
                 Started</a>
         </div>
     </header>
-
-    <!-- Hero -->
-    <section class="max-w-7xl mx-auto px-6 pt-20 pb-32 flex flex-col-reverse lg:flex-row items-center gap-12">
-        <div class="flex-1">
-            <h1 class="text-4xl sm:text-5xl font-bold leading-tight mb-6">
-                WCAG-Compliant Alt Text. <br class="hidden sm:inline" />Zero Effort.
-            </h1>
-            <p class="text-lg text-gray-600 mb-8 max-w-xl">
-                AltFixer scans your public site, finds missing or generic alt tags, and sends back a complete CSV of
-                clean, AI-written, accessible alt text. No logins. No installs. Just results.
-            </p>
-            <a href="#start"
-                class="inline-block bg-blue-600 text-white text-base font-semibold px-6 py-3 rounded-md hover:bg-blue-700 transition">
-                Get AltFixer – $69 One-Time
-            </a>
-        </div>
-        <div class="flex-1">
-            <img src="assets/1.png" alt="Illustration of AI scanning a website" class="w-full max-w-md mx-auto"
-                loading="lazy">
-        </div>
-    </section>
-
-    <!-- Features -->
-    <section id="features" class="bg-gray-50 py-24">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-14">What You Get</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 text-sm">
-
-                <div>
-                    <div class="mb-3">
-                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" stroke-width="2"
-                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                        </svg>
-                    </div>
-                    <h3 class="text-lg font-semibold mb-2">Instant Scan</h3>
-                    <p class="text-gray-600">Just give us your URL. We’ll crawl the images and deliver alt text within
-                        hours.</p>
-                </div>
-
-                <div>
-                    <div class="mb-3">
-                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" stroke-width="2"
-                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M4 16V8a2 2 0 012-2h2V4h4v2h2a2 2 0 012 2v8a2 2 0 01-2 2H6a2 2 0 01-2-2z" />
-                        </svg>
-                    </div>
-                    <h3 class="text-lg font-semibold mb-2">Simple Deliverables</h3>
-                    <p class="text-gray-600">You’ll get a CSV file, step-by-step PDF, and optional JavaScript snippet in
-                        a ZIP.</p>
-                </div>
-
-                <div>
-                    <div class="mb-3">
-                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" stroke-width="2"
-                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-                        </svg>
-                    </div>
-                    <h3 class="text-lg font-semibold mb-2">WCAG-Compliant Text</h3>
-                    <p class="text-gray-600">Alt tags follow accessibility audit standards — concise, descriptive, under
-                        125 characters.</p>
-                </div>
-
-                <div>
-                    <div class="mb-3">
-                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" stroke-width="2"
-                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 3v18h18V3H3zm3 6h12M9 15h6" />
-                        </svg>
-                    </div>
-                    <h3 class="text-lg font-semibold mb-2">SEO & Legal Boost</h3>
-                    <p class="text-gray-600">Avoid lawsuits and get more traffic from Google Images. Alt text pays off.
-                    </p>
-                </div>
-
+    <main>
+        <!-- Hero -->
+        <section class="max-w-7xl mx-auto px-6 pt-20 pb-16 flex flex-col-reverse lg:flex-row items-center gap-12">
+            <div class="flex-1">
+                <h1 class="text-4xl sm:text-5xl font-bold leading-tight mb-6">Accessible. SEO-Ready.<br
+                        class="hidden sm:inline" /> Done For You.</h1>
+                <p class="text-lg text-gray-600 mb-8 max-w-xl">
+                    We’re a small team from Austin, TX helping website owners generate high-quality, WCAG-compliant alt
+                    text
+                    without technical hassle. One domain. One scan. One file.
+                </p>
+                <a href="#start"
+                    class="inline-block bg-blue-600 text-white text-base font-semibold px-6 py-3 rounded-md hover:bg-blue-700 transition">Get
+                    AltFixer – $69 One-Time</a>
             </div>
-        </div>
-    </section>
+            <div class="flex-1">
+                <img src="assets/1.png" alt="Illustration of AI scanning a website" class="w-full max-w-md mx-auto"
+                    loading="lazy">
+            </div>
+        </section>
 
-    <!-- Pricing Justifier -->
-    <section class="py-24 px-6 text-center bg-white">
-        <div class="max-w-xl mx-auto">
-            <h2 class="text-2xl font-semibold mb-6">One-time payment. No subscriptions. No upsells.</h2>
-            <p class="text-gray-600 mb-8">Pay once, get everything you need. AltFixer costs less than one Uber ride and
-                could save you thousands in legal risk.</p>
-            <a href="#start"
-                class="inline-block bg-blue-600 text-white text-base font-semibold px-6 py-3 rounded-md hover:bg-blue-700 transition">
-                Get AltFixer – $69 Flat
-            </a>
-        </div>
-    </section>
+        <!-- Why This Matters -->
+        <section id="why" class="bg-white pt-12 pb-24 px-6 border-t border-gray-100">
+            <div class="max-w-5xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-10">Why It Matters</h2>
+                <div class="grid md:grid-cols-3 gap-10 text-left">
 
-    <!-- FAQ -->
-    <section id="faq" class="bg-gray-50 py-24 px-6">
-        <div class="max-w-3xl mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
-            <div class="space-y-8">
-                <div>
-                    <h4 class="font-semibold text-lg mb-2">Do you need access to my website?</h4>
-                    <p class="text-gray-600">No. You just give us your public site URL. No backend access or credentials
-                        required.</p>
-                </div>
-                <div>
-                    <h4 class="font-semibold text-lg mb-2">What do I get exactly?</h4>
-                    <p class="text-gray-600">You receive a downloadable ZIP with a CSV file of alt text, a PDF import
-                        guide, and an optional JS snippet.</p>
-                </div>
-                <div>
-                    <h4 class="font-semibold text-lg mb-2">What if I redesign later?</h4>
-                    <p class="text-gray-600">You can request a re-scan at any time for $49. Same process. Fresh results.
-                    </p>
+                    <!-- Legal Risk -->
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-100">
+                        <div class="mb-4">
+                            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" stroke-width="2"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 22c4.97 0 9-4.03 9-9 0-7-9-11-9-11S3 6 3 13c0 4.97 4.03 9 9 9z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4m0 4h.01" />
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">Legal Risk Is Rising</h3>
+                        <p class="text-gray-600 text-base mb-2">
+                            4,605 ADA accessibility lawsuits were filed in 2023 alone - and alt text violations are one
+                            of
+                            the top triggers. These lawsuits are expected to rise in 2024 and 2025.
+                        </p>
+                        <a href="https://www.audioeye.com/post/ada-lawsuits-continue-to-rise-in-2024/" target="_blank"
+                            class="text-blue-600 underline text-sm">Source: ADA Title III</a>
+                    </div>
+
+                    <!-- WCAG Compliance -->
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-100">
+                        <div class="mb-4">
+                            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" stroke-width="2"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9 12l2 2 4-4M12 22c5.52 0 10-4.48 10-10S17.52 2 12 2 2 6.48 2 12s4.48 10 10 10z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">WCAG-Aligned Alt Text</h3>
+                        <p class="text-gray-600 text-base mb-2">
+                            AltFixer follows WCAG 2.1 AA standards - the same ones referenced in accessibility audits
+                            and
+                            lawsuits.
+                        </p>
+                        <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank"
+                            class="text-blue-600 underline text-sm">View WCAG Guidelines</a>
+                    </div>
+
+                    <!-- SEO Boost -->
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-100">
+                        <div class="mb-4">
+                            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" stroke-width="2"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 17l6-6 4 4 8-8M21 21H3" />
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">SEO Growth Opportunity</h3>
+                        <p class="text-gray-600 text-base mb-2">
+                            Optimized alt text improves visibility in Google Images. Some sites see up to 12% more
+                            organic
+                            traffic.
+                        </p>
+                        <a href="https://backlinko.com/image-seo" target="_blank"
+                            class="text-blue-600 underline text-sm">Source: Backlinko Study</a>
+                    </div>
+
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
+
+        <!-- Features -->
+        <section id="features" class="bg-gray-50 py-24">
+            <div class="max-w-6xl mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-14">What You Get</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 text-sm text-center">
+
+                    <!-- Feature Block -->
+                    <div class="flex flex-col items-center text-center">
+                        <div class="mb-4">
+                            <svg class="w-10 h-10 text-blue-600 mx-auto" fill="none" stroke="currentColor"
+                                stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">Instant Scan</h3>
+                        <p class="text-gray-600">Just give us your URL. We’ll crawl the images and deliver alt text
+                            within
+                            hours.</p>
+                    </div>
+
+                    <div class="flex flex-col items-center text-center">
+                        <div class="mb-4">
+                            <svg class="w-10 h-10 text-blue-600 mx-auto" fill="none" stroke="currentColor"
+                                stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9 12h6m-6 4h6m-7 4h8a2 2 0 002-2V6a2 2 0 00-2-2h-2l-2-2h-4l-2 2H7a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">Simple Deliverables</h3>
+                        <p class="text-gray-600">You’ll get a CSV file, step-by-step PDF, and optional JavaScript
+                            snippet in
+                            a ZIP.</p>
+                    </div>
+
+                    <div class="flex flex-col items-center text-center">
+                        <div class="mb-4">
+                            <svg class="w-10 h-10 text-blue-600 mx-auto" fill="none" stroke="currentColor"
+                                stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9 12l2 2 4-4M12 22c5.52 0 10-4.48 10-10S17.52 2 12 2 2 6.48 2 12s4.48 10 10 10z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">WCAG-Compliant Text</h3>
+                        <p class="text-gray-600">Alt tags follow accessibility audit standards - concise, descriptive,
+                            under
+                            125 characters.</p>
+                    </div>
+
+                    <div class="flex flex-col items-center text-center">
+                        <div class="mb-4">
+                            <svg class="w-10 h-10 text-blue-600 mx-auto" fill="none" stroke="currentColor"
+                                stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 17l6-6 4 4 8-8M21 21H3" />
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">SEO & Legal Boost</h3>
+                        <p class="text-gray-600">Avoid lawsuits and get more traffic from Google Images. Alt text pays
+                            off.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Pricing Justifier -->
+        <section class="py-24 px-6 text-center bg-white">
+            <div class="max-w-xl mx-auto">
+                <h2 class="text-2xl font-semibold mb-6">Flat Fee. No Logins. No Upsells.</h2>
+                <p class="text-gray-600 mb-8">We built AltFixer because audits were overpriced and plugins didn't work.
+                    You
+                    pay once, we crawl your site, and email you everything you need.</p>
+                <a href="#start"
+                    class="inline-block bg-blue-600 text-white text-base font-semibold px-6 py-3 rounded-md hover:bg-blue-700 transition">Get
+                    AltFixer – $69 Flat</a>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="bg-gray-50 py-24 px-6">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+                <div class="space-y-8">
+                    <div>
+                        <h4 class="font-semibold text-lg mb-2">Do you need access to my website?</h4>
+                        <p class="text-gray-600">No. You just give us your public site URL. No backend access or
+                            credentials
+                            required.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-lg mb-2">What do I get exactly?</h4>
+                        <p class="text-gray-600">You receive a downloadable ZIP with a CSV file of alt text, a PDF
+                            import
+                            guide, and an optional JS snippet.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-lg mb-2">What if I redesign later?</h4>
+                        <p class="text-gray-600">You can request a re-scan at any time for $49. Same process. Fresh
+                            results.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <!-- CTA Footer -->
     <section id="start" class="bg-blue-600 text-white py-24 px-6">
         <div class="max-w-2xl mx-auto text-center space-y-6">
-            <h2 class="text-4xl sm:text-5xl font-bold tracking-tight">Fix Your Alt Text in Hours</h2>
-            <p class="text-lg text-blue-100 leading-relaxed">No meetings. No subscriptions. Just clean, accessible alt
-                text—automatically generated and delivered to your inbox.</p>
+            <h2 class="text-4xl sm:text-5xl font-bold tracking-tight">Built for Website Owners, by a Team in Austin</h2>
+            <p class="text-lg text-blue-100 leading-relaxed">Our job is to make accessibility effortless. Your job is to
+                paste in your domain. We’ll take care of the rest in under 24 hours.</p>
             <a href="#"
-                class="inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded-md shadow-sm hover:bg-gray-100 transition">
-                Buy Now – $69
-            </a>
+                class="inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded-md shadow-sm hover:bg-gray-100 transition">Buy
+                Now – $69</a>
         </div>
     </section>
 
@@ -169,9 +277,8 @@
     <section id="contact" class="bg-white py-24 px-6 border-t border-gray-100">
         <div class="max-w-2xl mx-auto text-center">
             <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
-            <p class="text-gray-600 mb-8">Have a question or need help? Use the form below and we’ll get back to you
-                within 24 hours.</p>
-
+            <p class="text-gray-600 mb-8">Have a question or need help? Use the form below and we’ll respond within 24
+                hours.</p>
             <form action="https://formspree.io/f/xvgrjeya" method="POST" class="space-y-6 text-left">
                 <div>
                     <label for="name" class="block text-sm font-medium text-gray-700">Your Name</label>
@@ -189,17 +296,49 @@
                         class="w-full mt-2 px-4 py-3 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 shadow-sm"></textarea>
                 </div>
                 <button type="submit"
-                    class="w-full bg-blue-600 text-white font-semibold py-3 px-6 rounded-md hover:bg-blue-700 transition">
-                    Send Message
-                </button>
+                    class="w-full bg-blue-600 text-white font-semibold py-3 px-6 rounded-md hover:bg-blue-700 transition">Send
+                    Message</button>
             </form>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="text-center py-8 text-sm text-gray-400">
-        <p>&copy; 2025 AltFixer. Accessibility-first. Not legal advice.</p>
+        <p>&copy; 2025 AltFixer. Accessibility-first. Built by a team in Austin, TX.</p>
     </footer>
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you need access to my website?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. You just give us your public site URL. No backend access or credentials required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What do I get exactly?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You receive a downloadable ZIP with a CSV file of alt text, a PDF import guide, and an optional JS snippet."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if I redesign later?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can request a re-scan at any time for $49. Same process. Fresh results."
+      }
+    }
+  ]
+}
+</script>
 
 </body>
 
