@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Start your AltFixer scan – ADA-compliant, SEO-optimized alt text in one file." />
+    <title>Start Your AltFixer Scan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-gray-900">
+
+    <!-- Navbar -->
+    <header class="w-full border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-lg font-semibold">AltFixer</div>
+            <a href="/"
+                class="bg-blue-600 text-white px-5 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition">Back
+                to
+                Home</a>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="max-w-4xl mx-auto px-6 pt-20 pb-12 text-center">
+        <h1 class="text-4xl font-bold mb-4">Start Your Alt Text Scan</h1>
+        <p class="text-gray-600 text-lg mb-6">One domain. One scan. One downloadable file. Complete the form below to
+            begin.</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12 text-sm text-gray-700">
+            <div class="flex items-center justify-center gap-2">
+                <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" stroke-width="2"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 22c4.97 0 9-4.03 9-9 0-7-9-11-9-11S3 6 3 13c0 4.97 4.03 9 9 9z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4m0 4h.01" />
+                </svg>
+                ADA-WCAG Compliant
+            </div>
+            <div class="flex items-center justify-center gap-2">
+                <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" stroke-width="2"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 17l6-6 4 4 8-8M21 21H3" />
+                </svg>
+                SEO Boost Guaranteed
+            </div>
+            <div class="flex items-center justify-center gap-2">
+                <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" stroke-width="2"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 11c0-1.105.895-2 2-2s2 .895 2 2-.895 2-2 2-2-.895-2-2zm0 0c0 1.105-.895 2-2 2s-2-.895-2-2 .895-2 2-2 2 .895 2 2z" />
+                </svg>
+                No Logins. No Plugins. No Risk.
+            </div>
+        </div>
+    </section>
+
+    <!-- Intake Form -->
+    <section class="max-w-lg mx-auto px-6 pb-24">
+        <form id="intakeForm" class="space-y-6 bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
+            <div>
+                <label for="name" class="block text-sm font-medium text-gray-700">Your Name (optional)</label>
+                <input type="text" name="name" id="name"
+                    class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+            </div>
+
+            <div>
+                <label for="email" class="block text-sm font-medium text-gray-700">Email <span
+                        class="text-red-500">*</span></label>
+                <input type="email" name="email" id="email" required
+                    class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+            </div>
+
+            <div>
+                <label for="domain" class="block text-sm font-medium text-gray-700">Website to Scan <span
+                        class="text-red-500">*</span></label>
+                <input type="text" name="domain" id="domain" required placeholder="https://example.com"
+                    class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+            </div>
+
+            <button type="submit"
+                class="w-full bg-blue-600 text-white font-semibold py-3 px-6 rounded-md hover:bg-blue-700 transition">
+                Next: Pay $69
+            </button>
+
+            <p class="text-center text-xs text-gray-500 pt-2">Secured checkout powered by Stripe. Instant delivery after
+                scan.</p>
+        </form>
+    </section>
+
+    <!-- EmailJS SDK (Global v3 SDK) -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            emailjs.init("ZNH6H-eh89eDJHHrL");
+
+            const form = document.getElementById('intakeForm');
+
+            form.addEventListener('submit', async (e) => {
+                e.preventDefault();
+
+                const name = form.name.value.trim();
+                const email = form.email.value.trim();
+                const domain = form.domain.value.trim();
+
+                try {
+                    await emailjs.send("service_8zoafh9", "template_lti1ig4", {
+                        name,
+                        email,
+                        domain,
+                        date: new Date().toLocaleString()
+                    });
+
+                    // Redirect to Stripe after email sends
+                    window.location.href = 'https://buy.stripe.com/test_cNi9AV9b0auh0jqc5N8g000';
+                } catch (err) {
+                    console.error("EmailJS failed:", err);
+                    alert("Something went wrong. Please try again.");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
