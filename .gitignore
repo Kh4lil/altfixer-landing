@@ -1,5 +1,16 @@
-/node_modules
+# Node modules
+node_modules/
+
+# Dependency lock file
 package-lock.json
+
+# Tailwind output (compiled CSS)
 public/css/tailwind.min.css
 css/tailwind.min.css
-src/tailwind.css
+
+# OS/system junk
+.DS_Store
+Thumbs.db
+
+# VSCode config
+.vscode/
