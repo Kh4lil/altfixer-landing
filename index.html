@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
     <!-- SEO -->
-    <title>AltFixer – Scan & Fix Missing Alt Text | WCAG SEO Accessibility</title>
+    <title>AltFixer – Scan & Fix Missing Alt Text | WCAG SEO Accessibility</title>
     <meta name="description"
-        content="Run an instant alt‑text scan with AltFixer, count missing attributes, and receive WCAG‑compliant alt text within 24 hours. One scan, one flat fee—better accessibility & SEO.">
+        content="AltFixer scans your site, writes WCAG‑compliant alt text, and emails a ready file in 24 hours—one scan, one flat fee for accessibility & SEO.">
     <meta name="keywords"
         content="altfixer, scan alt text, fix missing alt text, WCAG alt attributes, image SEO, ADA compliance">
     <meta name="author" content="AltFixer – Austin TX">
@@ -35,9 +35,8 @@
         <link rel="stylesheet" href="/css/tailwind.min.css">
     </noscript>
 
-    <!-- FONT PRELOAD -->
-    <link rel="preload" as="font" type="font/woff2"
-        href="https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK_uG0fyHXm6PGQ.woff2" crossorigin>
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
     <style>
         body {
@@ -45,7 +44,7 @@
         }
     </style>
 
-    <!-- STRUCTURED DATA -->
+    <!-- STRUCTURED DATA (Org + Product) -->
     <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -67,12 +66,13 @@
   }
   </script>
 
-    <!-- GA4 (replace ID) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+    <!-- Google Analytics 4 – Measurement ID G‑B4TPFTEZ9T -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B4TPFTEZ9T"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date()); gtag('config', 'G-XXXXXXX');
+        gtag('js', new Date());
+        gtag('config', 'G-B4TPFTEZ9T');
     </script>
 </head>
 
@@ -82,13 +82,16 @@
     <header class="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-gray-100">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#top" class="text-lg font-semibold hover:text-blue-600">AltFixer</a>
+
             <nav class="hidden md:flex gap-8 text-sm font-medium">
                 <a href="#why" class="hover:text-blue-600">Why&nbsp;Alt Text</a>
                 <a href="#features" class="hover:text-blue-600">What&nbsp;You&nbsp;Get</a>
                 <a href="#process" class="hover:text-blue-600">Process</a>
                 <a href="#faq" class="hover:text-blue-600">FAQ</a>
+                <a href="#deep-dive" class="hover:text-blue-600">Alt Text 101</a>
                 <a href="#contact" class="hover:text-blue-600">Contact</a>
             </nav>
+
             <a href="/intake.html"
                 class="bg-blue-600 text-white px-5 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition">
                 Start Scan
@@ -104,10 +107,18 @@
                     Instantly <em>scan</em> &amp; fix missing alt text.<br>
                     <span class="text-blue-600">Accessible &amp; SEO‑Ready.</span>
                 </h1>
+
                 <p class="text-lg text-gray-700 mb-10 max-w-xl">
-                    AltFixer scans your website, writes WCAG‑compliant alt attributes, and delivers everything you need—
-                    within <span class="font-medium">24&nbsp;hours</span>. One scan. One flat fee. No plugins.
+                    AltFixer scans your website, writes WCAG‑compliant alt attributes, and delivers everything you
+                    need—within
+                    <span class="font-medium">24&nbsp;hours</span>. One scan. One flat fee. No plugins.
                 </p>
+
+                <p class="text-gray-700 mt-6 max-w-xl">
+                    Instantly scan &amp; fix missing alt text so your images are both accessible and SEO‑ready—just like
+                    our headline promises.
+                </p>
+
                 <a href="/intake.html"
                     class="inline-block bg-blue-600 text-white text-base font-semibold px-6 py-3 rounded-md shadow hover:bg-blue-700 transition">
                     Scan My Site – $69
@@ -143,7 +154,7 @@
                         <div>
                             <h3 class="font-semibold text-lg mb-1">Reduce Legal Exposure</h3>
                             <p class="text-gray-600">
-                                In 2023, plaintiffs filed <strong>4,605 ADA web‑accessibility lawsuits</strong> in U.S.
+                                In 2023, plaintiffs filed <strong>4 605 ADA web‑accessibility lawsuits</strong> in U.S.
                                 courts
                                 <a href="https://www.forbes.com/sites/gusalexiou/2024/01/09/new-york-led-the-way-in-us-web-accessibility-lawsuits-in-2023-report-shows/"
                                     target="_blank" rel="noopener" class="text-blue-600 underline">source</a>. Alt‑text
@@ -151,6 +162,7 @@
                             </p>
                         </div>
                     </li>
+
                     <li class="flex gap-6">
                         <span
                             class="shrink-0 w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-semibold">2</span>
@@ -165,6 +177,7 @@
                             </p>
                         </div>
                     </li>
+
                     <li class="flex gap-6">
                         <span
                             class="shrink-0 w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-semibold">3</span>
@@ -191,8 +204,8 @@
                         <p class="text-gray-600">Our crawler maps every image—even CSS backgrounds.</p>
                     </div>
                     <div>
-                        <h3 class="text-lg font-semibold mb-2">AI + Human Review</h3>
-                        <p class="text-gray-600">GPT‑4 Vision drafts; an editor refines context &amp; tone.</p>
+                        <h3 class="text-lg font-semibold mb-2">AI + Human Review</h3>
+                        <p class="text-gray-600">GPT‑4 Vision drafts; an editor refines context &amp; tone.</p>
                     </div>
                     <div>
                         <h3 class="text-lg font-semibold mb-2">Ready‑to‑Import Files</h3>
@@ -240,17 +253,18 @@
                         </svg>
                     </summary>
 
-                    <article class="prose prose-blue max-w-none px-6 py-8 bg-white">
-                        <h2 class="text-2xl font-bold">Alt Text &amp; SEO 101</h2>
-                        <p>
+                    <article class="px-6 py-8 bg-white">
+                        <h2 class="text-2xl font-bold text-gray-900 mb-4">Alt Text &amp; SEO 101</h2>
+                        <p class="text-gray-700 leading-relaxed mb-4">
                             Google relies on alt attributes to understand image context. That data powers
-                            Universal Search thumbnails and Google Images rankings. When images lack
-                            clear alt text, entire traffic streams disappear.
+                            Universal Search thumbnails
+                            and Google Images rankings. When images lack clear alt text, entire traffic streams
+                            disappear.
                         </p>
 
-                        <h3>Best Practices We Follow</h3>
-                        <ul>
-                            <li>Describe the image’s core meaning in ≤ 125 characters.</li>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Best Practices We Follow</h3>
+                        <ul class="list-disc ml-6 space-y-2 text-gray-700">
+                            <li>Describe the image’s core meaning in ≤ 125 characters.</li>
                             <li>Include keywords only when they’re genuinely relevant.</li>
                             <li>Mark decorative graphics with <code>alt=""</code>.</li>
                             <li>Keep tone consistent with your brand voice.</li>
@@ -280,6 +294,64 @@
                 </div>
             </div>
         </section>
+
+        <!-- ========== ALT TEXT 101 DEEP‑DIVE (utility‑styled) ========== -->
+        <section id="deep-dive" class="bg-gray-50 border-t border-gray-100 py-24 px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold mb-6 text-gray-900">
+                    Why Alt Text Matters More Than Ever in 2025
+                </h2>
+
+                <p class="text-gray-700 leading-relaxed mb-6">
+                    Search engines can’t “see” pixels—they rely on alt attributes to understand images.
+                    Google’s
+                    <a href="https://developers.google.com/search/docs/appearance/images" target="_blank" rel="noopener"
+                        class="text-blue-600 underline">Images best‑practices guide</a>
+                    confirms descriptive alt text is a ranking factor for Universal Search thumbnails and Google Images
+                    itself.
+                </p>
+
+                <p class="text-gray-700 leading-relaxed mb-6">
+                    Accessibility is the second pillar. <strong>WCAG 2.2 AA</strong> success criterion 1.1.1 requires
+                    text
+                    alternatives for non‑text content. Missing or generic alt text forces screen readers to announce
+                    “image,”
+                    creating a poor experience for 285 million visually‑impaired users worldwide.
+                </p>
+
+                <h3 class="text-2xl font-semibold mt-10 mb-4 text-gray-900">Legal Exposure Keeps Growing</h3>
+                <p class="text-gray-700 leading-relaxed mb-6">
+                    In 2023, U.S. plaintiffs filed <strong>4 605 ADA web‑accessibility lawsuits</strong>, a 41 %
+                    increase since 2020.
+                    The Department of Justice lists missing alt text as a primary violation, with settlements often
+                    reaching five figures.
+                </p>
+
+                <h3 class="text-2xl font-semibold mt-10 mb-4 text-gray-900">SEO Upside: 12 % More Image Traffic</h3>
+                <p class="text-gray-700 leading-relaxed mb-6">
+                    A
+                    <a href="https://backlinko.com/image-seo" target="_blank" rel="noopener"
+                        class="text-blue-600 underline">Backlinko study</a>
+                    of one million results found that optimized alt attributes can unlock up to
+                    <strong>12 % extra organic visits</strong>. Images already power 22 % of all web searches—leaving
+                    that traffic untapped is costly.
+                </p>
+
+                <h3 class="text-2xl font-semibold mt-10 mb-4 text-gray-900">How AltFixer Solves the Problem</h3>
+                <ul class="list-disc ml-6 space-y-2 text-gray-700">
+                    <li>Full‑site crawler finds every <code>&lt;img&gt;</code> and CSS background image.</li>
+                    <li>GPT‑4 Vision drafts context‑aware descriptions in ≤ 125 characters.</li>
+                    <li>Human editors refine tone, remove keyword stuffing, and test with screen readers.</li>
+                    <li>WCAG and Grammarly checks run automatically before delivery.</li>
+                </ul>
+
+                <p class="text-gray-700 leading-relaxed mt-6">
+                    The result—a ready‑to‑import CSV, PDF guide, and optional JS snippet—arrives within 24 hours.
+                    One scan, one payment, and your site becomes more compliant, discoverable, and inclusive.
+                </p>
+            </div>
+        </section>
+
     </main>
 
     <!-- ========== FINAL CTA ========== -->
@@ -290,7 +362,7 @@
                 break.</p>
             <a href="/intake.html"
                 class="inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded-md shadow hover:bg-gray-100 transition">
-                Start My Scan – $69
+                Start My Scan – $69
             </a>
         </div>
     </section>
@@ -300,22 +372,26 @@
         <div class="max-w-2xl mx-auto text-center">
             <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
             <p class="text-gray-700 mb-10">Questions? We respond within one business day.</p>
+
             <form action="https://formspree.io/f/xvgrjeya" method="POST" class="space-y-6 text-left">
                 <label class="block">
                     <span class="text-sm font-medium text-gray-700">Name</span>
                     <input type="text" name="name" required
                         class="w-full mt-2 px-4 py-3 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 shadow-sm">
                 </label>
+
                 <label class="block">
                     <span class="text-sm font-medium text-gray-700">Email</span>
                     <input type="email" name="email" required
                         class="w-full mt-2 px-4 py-3 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 shadow-sm">
                 </label>
+
                 <label class="block">
                     <span class="text-sm font-medium text-gray-700">Message</span>
                     <textarea name="message" rows="5" required
                         class="w-full mt-2 px-4 py-3 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 shadow-sm"></textarea>
                 </label>
+
                 <button type="submit"
                     class="w-full bg-blue-600 text-white font-semibold py-3 px-6 rounded-md hover:bg-blue-700 transition">
                     Send Message
@@ -327,6 +403,7 @@
     <!-- ========== FOOTER ========== -->
     <footer class="text-center py-10 text-sm text-gray-400">
         <p>&copy; 2025 AltFixer · Built in Austin TX</p>
+
         <nav class="mt-3 flex justify-center gap-6">
             <a href="#top" class="hover:text-blue-600">Back to top</a>
             <a href="/privacy.html" class="hover:text-blue-600">Privacy</a>
@@ -353,16 +430,16 @@
 
     <!-- FAQ STRUCTURED DATA -->
     <script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"FAQPage",
-  "mainEntity":[
-    {"@type":"Question","name":"Do you need access to my site?","acceptedAnswer":{"@type":"Answer","text":"No. A public URL is all we need."}},
-    {"@type":"Question","name":"What files will I receive?","acceptedAnswer":{"@type":"Answer","text":"A CSV, PDF guide, and optional JS snippet—delivered as a ZIP."}},
-    {"@type":"Question","name":"Can I request a re‑scan?","acceptedAnswer":{"@type":"Answer","text":"Yes. Re‑scans cost $49 and follow the same 24‑hour turnaround."}}
-  ]
-}
-</script>
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"Do you need access to my site?","acceptedAnswer":{"@type":"Answer","text":"No. A public URL is all we need."}},
+      {"@type":"Question","name":"What files will I receive?","acceptedAnswer":{"@type":"Answer","text":"A CSV, PDF guide, and optional JS snippet—delivered as a ZIP."}},
+      {"@type":"Question","name":"Can I request a re‑scan?","acceptedAnswer":{"@type":"Answer","text":"Yes. Re‑scans cost $49 and follow the same 24‑hour turnaround."}}
+    ]
+  }
+  </script>
 </body>
 
 </html>
