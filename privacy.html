@@ -1,28 +1,35 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth" id="top">
 
 <head>
     <!-- BASIC META -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
     <!-- SEO -->
     <title>Privacy Policy | AltFixer</title>
     <meta name="description"
-        content="Learn how AltFixer collects, uses, and protects your information in compliance with GDPR, CCPA, and industry best practices." />
+        content="Learn how AltFixer collects, uses, and protects your information in compliance with GDPR, CCPA, and industry best practices.">
     <meta name="keywords"
-        content="AltFixer privacy policy, GDPR compliance, CCPA rights, data protection, accessibility software" />
-    <link rel="canonical" href="https://altfixer.com/privacy.html" />
+        content="AltFixer privacy policy, GDPR compliance, CCPA rights, data protection, accessibility software">
+    <link rel="canonical" href="https://altfixer.com/privacy.html">
 
     <!-- SOCIAL -->
-    <meta property="og:title" content="AltFixer Privacy Policy" />
-    <meta property="og:description" content="Transparent information on how AltFixer handles your data." />
-    <meta property="og:url" content="https://altfixer.com/privacy.html" />
-    <meta property="og:image" content="https://altfixer.com/og-image.png" />
-    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:title" content="AltFixer Privacy Policy">
+    <meta property="og:description" content="Transparent information on how AltFixer handles your data.">
+    <meta property="og:url" content="https://altfixer.com/privacy.html">
+    <meta property="og:image" content="https://altfixer.com/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
 
-    <!-- TAILWIND & FONT -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- ICONS -->
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- SELF‑HOSTED TAILWIND -->
+    <link rel="preload" as="style" href="/css/tailwind.min.css">
+    <link rel="stylesheet" href="/css/tailwind.min.css">
+
+    <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
     <style>
@@ -34,41 +41,49 @@
     <!-- STRUCTURED DATA -->
     <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@type":"PrivacyPolicy",
-    "name":"AltFixer Privacy Policy",
-    "url":"https://altfixer.com/privacy.html",
-    "publisher":{
-      "@type":"Organization",
-      "name":"AltFixer",
-      "url":"https://altfixer.com"
+    "@context": "https://schema.org",
+    "@type": "PrivacyPolicy",
+    "name": "AltFixer Privacy Policy",
+    "url": "https://altfixer.com/privacy.html",
+    "publisher": {
+      "@type": "Organization",
+      "name": "AltFixer",
+      "url": "https://altfixer.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://altfixer.com/og-image.png"
+      }
     },
-    "inLanguage":"en"
+    "inLanguage": "en"
   }
   </script>
 </head>
 
-<body class="bg-white text-gray-900">
-    <!-- ===== NAVBAR ===== -->
-    <header class="sticky top-0 bg-white/90 backdrop-blur border-b border-gray-100">
+<body class="bg-white text-gray-900 flex flex-col min-h-screen">
+
+    <!-- ========== HEADER (consistent with other pages) ========== -->
+    <header class="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-gray-100">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <a href="/" class="text-lg font-semibold hover:text-blue-600">AltFixer</a>
+
             <nav class="hidden md:flex gap-8 text-sm font-medium">
-                <a href="/" class="hover:text-blue-600">Home</a>
-                <a href="/terms.html" class="hover:text-blue-600">Terms</a>
-                <a href="/contact#top" class="hover:text-blue-600">Contact</a>
+                <a href="/#why" class="hover:text-blue-600">Why Alt Text</a>
+                <a href="/#features" class="hover:text-blue-600">What You Get</a>
+                <a href="/#process" class="hover:text-blue-600">Process</a>
+                <a href="/#faq" class="hover:text-blue-600">FAQ</a>
+                <a href="/#contact" class="hover:text-blue-600">Contact</a>
             </nav>
         </div>
     </header>
 
-    <main>
-        <!-- ===== HERO ===== -->
-        <section class="max-w-4xl mx-auto px-6 pt-24 pb-12">
-            <h1 class="text-4xl font-bold mb-4 text-center">Privacy Policy</h1>
-            <p class="text-gray-700 mb-8 text-center">
-                Effective date: <time datetime="2025-07-22">22 July 2025</time>
+    <main class="flex-1">
+        <!-- ========== HERO ========== -->
+        <section class="max-w-4xl mx-auto px-6 pt-24 pb-12 text-center">
+            <h1 class="text-4xl font-bold mb-4">Privacy Policy</h1>
+            <p class="text-gray-700 mb-8">
+                Effective&nbsp;date:&nbsp;<time datetime="2025-07-22">22 July 2025</time>
             </p>
-            <p class="text-gray-700 text-center max-w-2xl mx-auto">
+            <p class="text-gray-700 max-w-2xl mx-auto">
                 AltFixer (“<strong>we</strong>,” “<strong>our</strong>,” or “<strong>us</strong>”) respects your
                 privacy.
                 This policy explains how we collect, use, and protect your information when you visit
@@ -76,9 +91,9 @@
             </p>
         </section>
 
-        <!-- ===== POLICY CONTENT ===== -->
+        <!-- ========== POLICY CONTENT ========== -->
         <section class="max-w-3xl mx-auto px-6 pb-24 space-y-12 text-gray-800 text-sm leading-relaxed">
-            <!-- 1. What We Collect -->
+            <!-- 1 -->
             <article>
                 <h2 class="text-xl font-semibold mb-2">1. Information We Collect</h2>
                 <ul class="list-disc ml-6 space-y-2">
@@ -93,7 +108,7 @@
                 </ul>
             </article>
 
-            <!-- 2. How We Use Data -->
+            <!-- 2 -->
             <article>
                 <h2 class="text-xl font-semibold mb-2">2. How We Use Your Information</h2>
                 <ul class="list-disc ml-6 space-y-2">
@@ -104,7 +119,7 @@
                 </ul>
             </article>
 
-            <!-- 3. Legal Bases -->
+            <!-- 3 -->
             <article>
                 <h2 class="text-xl font-semibold mb-2">3. Legal Bases (GDPR)</h2>
                 <p>We process personal data only when we have a legal basis:</p>
@@ -115,31 +130,30 @@
                 </ul>
             </article>
 
-            <!-- 4. Cookies -->
+            <!-- 4 -->
             <article>
-                <h2 class="text-xl font-semibold mb-2">4. Cookies & Tracking</h2>
+                <h2 class="text-xl font-semibold mb-2">4. Cookies &amp; Tracking</h2>
                 <p>
-                    AltFixer uses no marketing cookies. We employ <a href="https://plausible.io" target="_blank"
-                        rel="noopener" class="text-blue-600 underline">Plausible Analytics</a>, a privacy‑focused,
-                    cookieless analytics tool.
+                    AltFixer uses no marketing cookies. We employ
+                    <a href="https://plausible.io" target="_blank" rel="noopener"
+                        class="text-blue-600 underline">Plausible Analytics</a>,
+                    a privacy‑focused, cookieless analytics tool.
                 </p>
             </article>
 
-            <!-- 5. Data Sharing -->
+            <!-- 5 -->
             <article>
                 <h2 class="text-xl font-semibold mb-2">5. Data Sharing</h2>
-                <p>
-                    We do not sell your data. We share it only with trusted subprocessors:
-                </p>
+                <p>We do not sell your data. We share it only with trusted subprocessors:</p>
                 <ul class="list-disc ml-6 space-y-2">
                     <li><strong>Stripe, Inc.</strong> – payment processing</li>
-                    <li><strong>Amazon Web Services</strong> – hosting & email (SES)</li>
+                    <li><strong>Amazon Web Services</strong> – hosting &amp; email (SES)</li>
                     <li><strong>EmailJS</strong> – transactional email relay</li>
                 </ul>
                 <p>All vendors are bound by data‑processing agreements.</p>
             </article>
 
-            <!-- 6. International Transfers -->
+            <!-- 6 -->
             <article>
                 <h2 class="text-xl font-semibold mb-2">6. International Transfers</h2>
                 <p>
@@ -148,7 +162,7 @@
                 </p>
             </article>
 
-            <!-- 7. Data Retention -->
+            <!-- 7 -->
             <article>
                 <h2 class="text-xl font-semibold mb-2">7. Data Retention</h2>
                 <p>
@@ -157,7 +171,7 @@
                 </p>
             </article>
 
-            <!-- 8. Your Rights -->
+            <!-- 8 -->
             <article>
                 <h2 class="text-xl font-semibold mb-2">8. Your Rights</h2>
                 <p>You may have the right to:</p>
@@ -170,16 +184,16 @@
                 <p>Contact us to exercise these rights (details below).</p>
             </article>
 
-            <!-- 9. CCPA Notice -->
+            <!-- 9 -->
             <article>
                 <h2 class="text-xl font-semibold mb-2">9. Notice for California Residents (CCPA)</h2>
                 <p>
-                    AltFixer does not sell personal information. Under California Civil Code § 1798.100 et seq.,
+                    AltFixer does not sell personal information. Under California Civil Code § 1798.100 et seq.,
                     you may request disclosure or deletion of your data by emailing us.
                 </p>
             </article>
 
-            <!-- 10. Security -->
+            <!-- 10 -->
             <article>
                 <h2 class="text-xl font-semibold mb-2">10. Security</h2>
                 <p>
@@ -188,15 +202,13 @@
                 </p>
             </article>
 
-            <!-- 11. Children -->
+            <!-- 11 -->
             <article>
                 <h2 class="text-xl font-semibold mb-2">11. Children’s Privacy</h2>
-                <p>
-                    AltFixer is not directed to children under 13. We do not knowingly collect data from minors.
-                </p>
+                <p>AltFixer is not directed to children under 13. We do not knowingly collect data from minors.</p>
             </article>
 
-            <!-- 12. Changes -->
+            <!-- 12 -->
             <article>
                 <h2 class="text-xl font-semibold mb-2">12. Changes to This Policy</h2>
                 <p>
@@ -205,7 +217,7 @@
                 </p>
             </article>
 
-            <!-- 13. Contact -->
+            <!-- 13 -->
             <article>
                 <h2 class="text-xl font-semibold mb-2">13. Contact Us</h2>
                 <p>
@@ -216,13 +228,13 @@
         </section>
     </main>
 
-    <!-- ===== FOOTER ===== -->
-    <footer class="text-center py-10 text-sm text-gray-400">
+    <!-- ========== FOOTER ========== -->
+    <footer class="border-t border-gray-100 text-center py-10 text-sm text-gray-400">
         <p>&copy; 2025 AltFixer · All rights reserved.</p>
         <nav class="mt-3 flex justify-center gap-6">
             <a href="/" class="hover:text-blue-600">Home</a>
             <a href="/terms.html" class="hover:text-blue-600">Terms</a>
-            <a href="/index.html#contact" class="hover:text-blue-600">Contact</a>
+            <a href="/#contact" class="hover:text-blue-600">Contact</a>
         </nav>
     </footer>
 </body>

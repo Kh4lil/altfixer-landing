@@ -1,0 +1,6 @@
+/node_modules
+package-lock.json
+public/css/tailwind.min.css
+css/tailwind.min.css
+src-tailwind.css
+src/tailwind.css

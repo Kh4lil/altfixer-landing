@@ -1,0 +1,21 @@
+# robots.txt – AltFixer (https://altfixer.com)
+# Last updated: 2025‑07‑22
+
+# ---------- Global rules ----------
+User-agent: *
+Allow: /
+
+# ---------- Optional: block non‑public routes ----------
+# Disallow: /api/
+# Disallow: /admin/
+# Disallow: /drafts/
+# (Uncomment lines above if such paths exist and should remain private.)
+
+# ---------- Crawl‑delay (only if your server struggles) ----------
+# Crawl-delay: 10
+
+# ---------- Sitemap ----------
+Sitemap: https://altfixer.com/sitemap.xml
+
+# ---------- Host (recommended by Yandex, ignored by Google/Bing) ----------
+Host: altfixer.com

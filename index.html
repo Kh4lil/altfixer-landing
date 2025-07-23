@@ -1,38 +1,43 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth" id="top">
 
 <head>
     <!-- BASIC META -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
     <!-- SEO -->
-    <title>AltFixer – Instantly Fix Missing Alt Text for SEO & Accessibility</title>
+    <title>AltFixer – Scan & Fix Missing Alt Text | WCAG SEO Accessibility</title>
     <meta name="description"
-        content="AltFixer scans your website, writes WCAG‑compliant alt attributes, and emails a ready‑to‑import file within 24 hours. One scan, one flat fee—instant SEO & accessibility gains." />
+        content="Run an instant alt‑text scan with AltFixer, count missing attributes, and receive WCAG‑compliant alt text within 24 hours. One scan, one flat fee—better accessibility & SEO.">
     <meta name="keywords"
-        content="alt text generator, WCAG alt text, image SEO, ADA compliance, AI alt attributes, Austin Texas" />
-    <meta name="author" content="AltFixer – Austin, TX" />
+        content="altfixer, scan alt text, fix missing alt text, WCAG alt attributes, image SEO, ADA compliance">
+    <meta name="author" content="AltFixer – Austin TX">
 
     <!-- SOCIAL META -->
-    <meta property="og:title" content="AltFixer – Fix Missing Alt Text in Minutes" />
+    <meta property="og:title" content="AltFixer – Scan & Fix Missing Alt Text in Minutes">
     <meta property="og:description"
-        content="Generate high‑quality, WCAG‑compliant alt text for every image on your site. One scan, one flat fee." />
-    <meta property="og:image" content="https://altfixer.com/og-image.png" />
-    <meta property="og:url" content="https://altfixer.com/" />
-    <meta name="twitter:card" content="summary_large_image" />
+        content="Generate WCAG‑compliant alt text for every image on your site. One scan, one flat fee.">
+    <meta property="og:image" content="https://altfixer.com/og-image.png">
+    <meta property="og:url" content="https://altfixer.com/">
+    <meta name="twitter:card" content="summary_large_image">
 
-    <!-- CANONICAL + ICONS -->
-    <link rel="canonical" href="https://altfixer.com/" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
-    <link rel="manifest" href="/site.webmanifest" />
+    <!-- CANONICAL & ICONS -->
+    <link rel="canonical" href="https://altfixer.com/">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">
 
-    <!-- TAILWIND -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- SELF‑HOSTED TAILWIND (non‑blocking) -->
+    <link rel="preload" as="style" href="/css/tailwind.min.css">
+    <link rel="stylesheet" href="/css/tailwind.min.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="/css/tailwind.min.css">
+    </noscript>
 
-    <!-- FONT -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- FONT PRELOAD -->
+    <link rel="preload" as="font" type="font/woff2"
+        href="https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK_uG0fyHXm6PGQ.woff2" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
     <style>
         body {
@@ -40,7 +45,7 @@
         }
     </style>
 
-    <!-- SCHEMA.ORG -->
+    <!-- STRUCTURED DATA -->
     <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -55,15 +60,24 @@
   {
     "@context":"https://schema.org",
     "@type":"Product",
-    "name":"AltFixer Alt‑Text Scan",
+    "name":"AltFixer Alt‑Text Scan",
     "description":"One‑time service that generates WCAG‑compliant alt attributes for every image on a website.",
     "brand":"AltFixer",
     "offers":{"@type":"Offer","price":"69","priceCurrency":"USD","url":"https://altfixer.com/intake.html","availability":"https://schema.org/InStock"}
   }
   </script>
+
+    <!-- GA4 (replace ID) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date()); gtag('config', 'G-XXXXXXX');
+    </script>
 </head>
 
 <body class="bg-white text-gray-900">
+
     <!-- ========== NAVBAR ========== -->
     <header class="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-gray-100">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
@@ -82,27 +96,31 @@
         </div>
     </header>
 
-    <main id="top">
+    <main>
         <!-- ========== HERO ========== -->
         <section class="max-w-7xl mx-auto px-6 pt-24 pb-20 grid lg:grid-cols-12 gap-10 items-center">
             <div class="lg:col-span-6">
                 <h1 class="text-4xl sm:text-5xl font-bold leading-tight mb-6">
-                    Instantly Fix Missing Alt Text.<br>
-                    <span class="text-blue-600">Accessible & SEO‑Ready.</span>
+                    Instantly <em>scan</em> &amp; fix missing alt text.<br>
+                    <span class="text-blue-600">Accessible &amp; SEO‑Ready.</span>
                 </h1>
                 <p class="text-lg text-gray-700 mb-10 max-w-xl">
-                    AltFixer scans your website, writes WCAG‑compliant alt attributes, and
-                    delivers everything you need—within <span class="font-medium">24 hours</span>.
-                    One scan. One flat fee. No plugins.
+                    AltFixer scans your website, writes WCAG‑compliant alt attributes, and delivers everything you need—
+                    within <span class="font-medium">24&nbsp;hours</span>. One scan. One flat fee. No plugins.
                 </p>
                 <a href="/intake.html"
                     class="inline-block bg-blue-600 text-white text-base font-semibold px-6 py-3 rounded-md shadow hover:bg-blue-700 transition">
                     Scan My Site – $69
                 </a>
             </div>
+
             <figure class="lg:col-span-6">
-                <img src="/assets/1.png" alt="Mockup of AltFixer AI scanning a website" class="w-full max-w-lg mx-auto"
-                    loading="lazy">
+                <picture>
+                    <source type="image/webp" srcset="/assets/hero.webp">
+                    <img src="/assets/hero.jpg" srcset="/assets/hero-480.jpg 480w, /assets/hero.jpg 800w"
+                        sizes="(max-width: 640px) 80vw, 800px" width="800" height="540"
+                        alt="Mock‑up of AltFixer scanning a website" class="w-full max-w-lg mx-auto" loading="lazy">
+                </picture>
             </figure>
         </section>
 
@@ -125,7 +143,7 @@
                         <div>
                             <h3 class="font-semibold text-lg mb-1">Reduce Legal Exposure</h3>
                             <p class="text-gray-600">
-                                In 2023, plaintiffs filed <strong>4,605 ADA web‑accessibility lawsuits</strong> in U.S.
+                                In 2023, plaintiffs filed <strong>4,605 ADA web‑accessibility lawsuits</strong> in U.S.
                                 courts
                                 <a href="https://www.forbes.com/sites/gusalexiou/2024/01/09/new-york-led-the-way-in-us-web-accessibility-lawsuits-in-2023-report-shows/"
                                     target="_blank" rel="noopener" class="text-blue-600 underline">source</a>. Alt‑text
@@ -141,8 +159,9 @@
                             <p class="text-gray-600">
                                 AltFixer follows the latest
                                 <a href="https://www.w3.org/TR/WCAG22/" target="_blank" rel="noopener"
-                                    class="text-blue-600 underline">Web Content Accessibility Guidelines</a>,
-                                the benchmark auditors use.
+                                    class="text-blue-600 underline">
+                                    Web Content Accessibility Guidelines
+                                </a> —the benchmark auditors use.
                             </p>
                         </div>
                     </li>
@@ -152,8 +171,7 @@
                         <div>
                             <h3 class="font-semibold text-lg mb-1">Win More Organic Traffic</h3>
                             <p class="text-gray-600">
-                                Optimized alt text can unlock up to
-                                <strong>12 % more visits from Google Images</strong>
+                                Optimized alt text can unlock up to <strong>12 % more visits from Google Images</strong>
                                 <a href="https://backlinko.com/image-seo" target="_blank" rel="noopener"
                                     class="text-blue-600 underline">Backlinko study</a>.
                             </p>
@@ -170,11 +188,11 @@
                 <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 text-sm">
                     <div>
                         <h3 class="text-lg font-semibold mb-2">Full‑Site Scan</h3>
-                        <p class="text-gray-600">Our crawler maps every image, including backgrounds.</p>
+                        <p class="text-gray-600">Our crawler maps every image—even CSS backgrounds.</p>
                     </div>
                     <div>
                         <h3 class="text-lg font-semibold mb-2">AI + Human Review</h3>
-                        <p class="text-gray-600">GPT‑4 Vision drafts; a human editor refines context & tone.</p>
+                        <p class="text-gray-600">GPT‑4 Vision drafts; an editor refines context &amp; tone.</p>
                     </div>
                     <div>
                         <h3 class="text-lg font-semibold mb-2">Ready‑to‑Import Files</h3>
@@ -223,16 +241,16 @@
                     </summary>
 
                     <article class="prose prose-blue max-w-none px-6 py-8 bg-white">
-                        <h2 class="text-2xl font-bold">Alt Text & SEO 101</h2>
+                        <h2 class="text-2xl font-bold">Alt Text &amp; SEO 101</h2>
                         <p>
                             Google relies on alt attributes to understand image context. That data powers
-                            Universal Search thumbnails and Google Images rankings. When images lack
+                            Universal Search thumbnails and Google Images rankings. When images lack
                             clear alt text, entire traffic streams disappear.
                         </p>
 
-                        <h3>Best Practices We Follow</h3>
+                        <h3>Best Practices We Follow</h3>
                         <ul>
-                            <li>Describe the image’s core meaning in ≤&nbsp;125 characters.</li>
+                            <li>Describe the image’s core meaning in ≤ 125 characters.</li>
                             <li>Include keywords only when they’re genuinely relevant.</li>
                             <li>Mark decorative graphics with <code>alt=""</code>.</li>
                             <li>Keep tone consistent with your brand voice.</li>
@@ -308,24 +326,23 @@
 
     <!-- ========== FOOTER ========== -->
     <footer class="text-center py-10 text-sm text-gray-400">
-        <p>&copy; 2025 AltFixer · Built in Austin, TX</p>
+        <p>&copy; 2025 AltFixer · Built in Austin TX</p>
         <nav class="mt-3 flex justify-center gap-6">
             <a href="#top" class="hover:text-blue-600">Back to top</a>
             <a href="/privacy.html" class="hover:text-blue-600">Privacy</a>
             <a href="/terms.html" class="hover:text-blue-600">Terms</a>
         </nav>
 
-        <!-- Social share (unobtrusive) -->
         <div class="mt-6 flex justify-center gap-6">
             <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Faltfixer.com&text=Fix%20your%20alt%20text%20with%20%23AltFixer"
-                class="text-gray-400 hover:text-blue-600" aria-label="Share on Twitter">
+                class="text-gray-400 hover:text-blue-600" aria-label="Share on Twitter" rel="noopener">
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                     <path
                         d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v.45A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
                 </svg>
             </a>
             <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Faltfixer.com"
-                class="text-gray-400 hover:text-blue-600" aria-label="Share on LinkedIn">
+                class="text-gray-400 hover:text-blue-600" aria-label="Share on LinkedIn" rel="noopener">
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                     <path
                         d="M20.447 20.452H17.21V14.81c0-1.344-.028-3.071-1.872-3.071-1.873 0-2.159 1.463-2.159 2.975v5.738H9.933V9.5h3.115v1.493h.045c.434-.824 1.496-1.695 3.076-1.695 3.287 0 3.893 2.164 3.893 4.978v6.276zM5.337 8.006c-1.003 0-1.812-.81-1.812-1.812S4.334 4.383 5.337 4.383s1.812.81 1.812 1.812- .809 1.811-1.812 1.811zM6.708 20.452H3.965V9.5h2.743v10.952zM22.225 0H1.771C.792 0 0 .774 0 1.736v20.528C0 23.226.792 24 1.771 24h20.451C23.207 24 24 23.226 24 22.264V1.736C24 .774 23.207 0 22.225 0z" />
@@ -334,7 +351,7 @@
         </div>
     </footer>
 
-    <!-- FAQPage schema -->
+    <!-- FAQ STRUCTURED DATA -->
     <script type="application/ld+json">
 {
   "@context":"https://schema.org",

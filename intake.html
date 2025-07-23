@@ -1,28 +1,35 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth" id="top">
 
 <head>
     <!-- BASIC META -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
     <!-- SEO -->
-    <title>Start Your AltFixer Scan – WCAG‑Compliant Alt Text in 24 h</title>
+    <title>Start Your AltFixer Scan – WCAG‑Compliant Alt Text in 24 h</title>
     <meta name="description"
-        content="Begin your AltFixer scan in seconds. We crawl your website, generate WCAG‑compliant, SEO‑ready alt attributes, and email you a ready‑to‑import file within 24 hours." />
+        content="Begin your AltFixer scan in seconds. We crawl your website, generate WCAG‑compliant, SEO‑ready alt attributes, and email you a ready‑to‑import file within 24 hours.">
     <meta name="keywords"
-        content="alt text scan, image accessibility audit, WCAG compliance, ADA alt attributes, SEO image optimization" />
-    <link rel="canonical" href="https://altfixer.com/intake.html" />
+        content="alt text scan, image accessibility audit, WCAG compliance, ADA alt attributes, SEO image optimization">
+    <link rel="canonical" href="https://altfixer.com/intake.html">
 
-    <!-- OPEN GRAPH -->
-    <meta property="og:title" content="Start Your AltFixer Scan" />
-    <meta property="og:description" content="One scan. One file. WCAG‑compliant alt text in 24 hours." />
-    <meta property="og:url" content="https://altfixer.com/intake.html" />
-    <meta property="og:image" content="https://altfixer.com/og-image.png" />
-    <meta name="twitter:card" content="summary_large_image" />
+    <!-- SOCIAL -->
+    <meta property="og:title" content="Start Your AltFixer Scan">
+    <meta property="og:description" content="One scan. One file. WCAG‑compliant alt text in 24 hours.">
+    <meta property="og:url" content="https://altfixer.com/intake.html">
+    <meta property="og:image" content="https://altfixer.com/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
 
-    <!-- TAILWIND & FONT -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- ICONS -->
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- SELF‑HOSTED TAILWIND (non‑blocking) -->
+    <link rel="preload" as="style" href="/css/tailwind.min.css">
+    <link rel="stylesheet" href="/css/tailwind.min.css">
+
+    <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
     <style>
@@ -31,37 +38,47 @@
         }
     </style>
 
-    <!-- STRUCTURED DATA -->
+    <!-- STRUCTURED DATA -->
     <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@type":"WebPage",
-    "name":"Start Your AltFixer Scan",
-    "description":"Form page to initiate an AltFixer alt‑text scan and checkout.",
-    "url":"https://altfixer.com/intake.html"
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Start Your AltFixer Scan",
+    "description": "Form page to initiate an AltFixer alt‑text scan and checkout.",
+    "url": "https://altfixer.com/intake.html"
   }
   </script>
 </head>
 
-<body class="bg-white text-gray-900">
-    <!-- ===== NAVBAR ===== -->
-    <header class="sticky top-0 bg-white/90 backdrop-blur border-b border-gray-100">
+<body class="bg-white text-gray-900 flex flex-col min-h-screen">
+
+    <!-- ========== HEADER (matches index.html) ========== -->
+    <header class="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-gray-100">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <a href="/" class="text-lg font-semibold hover:text-blue-600">AltFixer</a>
+
+            <nav class="hidden md:flex gap-8 text-sm font-medium">
+                <a href="/#why" class="hover:text-blue-600">Why&nbsp;Alt Text</a>
+                <a href="/#features" class="hover:text-blue-600">What&nbsp;You&nbsp;Get</a>
+                <a href="/#process" class="hover:text-blue-600">Process</a>
+                <a href="/#faq" class="hover:text-blue-600">FAQ</a>
+                <a href="/#contact" class="hover:text-blue-600">Contact</a>
+            </nav>
+
             <a href="/"
                 class="bg-blue-600 text-white px-5 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition">
-                Back to Home
+                Back Home
             </a>
         </div>
     </header>
 
-    <main>
-        <!-- ===== HERO ===== -->
+    <main class="flex-1">
+        <!-- ========== HERO ========== -->
         <section class="max-w-4xl mx-auto px-6 pt-24 pb-12 text-center">
             <h1 class="text-4xl font-bold mb-4">Start Your AltFixer Scan</h1>
             <p class="text-gray-700 text-lg mb-8">
-                One domain. One scan. One downloadable file—<span class="font-medium">WCAG‑compliant alt text in
-                    24 hours.</span>
+                One domain. One scan. One downloadable file—<span class="font-medium">WCAG‑compliant alt text
+                    in 24 hours.</span>
             </p>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-14 text-sm text-gray-700">
@@ -92,28 +109,28 @@
             </div>
         </section>
 
-        <!-- ===== INTAKE FORM ===== -->
+        <!-- ========== INTAKE FORM ========== -->
         <section class="max-w-lg mx-auto px-6 pb-24">
             <form id="intakeForm" class="space-y-6 bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200"
                 aria-describedby="privacy-note">
                 <div>
                     <label for="name" class="block text-sm font-medium text-gray-700">Your Name</label>
-                    <input type="text" name="name" id="name"
+                    <input type="text" id="name" name="name" autocomplete="name"
                         class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
                 </div>
 
                 <div>
                     <label for="email" class="block text-sm font-medium text-gray-700">Email <span
                             class="text-red-500">*</span></label>
-                    <input type="email" name="email" id="email" required
-                        class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
-                        autocomplete="email">
+                    <input type="email" id="email" name="email" required autocomplete="email"
+                        class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
                 </div>
 
                 <div>
                     <label for="domain" class="block text-sm font-medium text-gray-700">Website URL <span
                             class="text-red-500">*</span></label>
-                    <input type="url" name="domain" id="domain" required placeholder="https://example.com"
+                    <input type="url" id="domain" name="domain" required placeholder="https://example.com"
+                        autocomplete="url"
                         class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
                 </div>
 
@@ -130,7 +147,7 @@
             </form>
         </section>
 
-        <!-- ===== TRUST FOOTNOTE ===== -->
+        <!-- ========== TRUST FOOTNOTE ========== -->
         <section class="bg-gray-50 border-t border-gray-100 py-10 px-6">
             <div class="max-w-4xl mx-auto text-sm text-gray-700 text-center md:text-left">
                 <p class="mb-4">
@@ -149,9 +166,9 @@
         </section>
     </main>
 
-    <!-- ===== FOOTER ===== -->
-    <footer class="text-center py-10 text-sm text-gray-400">
-        <p>&copy; 2025 AltFixer · Built in Austin, TX</p>
+    <!-- ========== FOOTER ========== -->
+    <footer class="border-t border-gray-100 text-center py-10 text-sm text-gray-400">
+        <p>&copy; 2025 AltFixer · Built in Austin TX</p>
         <nav class="mt-3 flex justify-center gap-6">
             <a href="/" class="hover:text-blue-600">Home</a>
             <a href="/privacy.html" class="hover:text-blue-600">Privacy</a>
@@ -159,19 +176,17 @@
         </nav>
     </footer>
 
-    <!-- ===== EmailJS SDK & Form Handler ===== -->
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- ========== EmailJS SDK & handler ========== -->
+    <script async src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            emailjs.init('ZNH6H-eh89eDJHHrL');    // Public Key
+            emailjs.init('ZNH6H-eh89eDJHHrL'); // Public key
 
             const form = document.getElementById('intakeForm');
-
             form.addEventListener('submit', async (e) => {
                 e.preventDefault();
 
                 const { name, email, domain } = form;
-
                 try {
                     await emailjs.send('service_8zoafh9', 'template_lti1ig4', {
                         name: name.value.trim(),
@@ -180,7 +195,7 @@
                         date: new Date().toLocaleString()
                     });
 
-                    // Redirect to Stripe checkout (test link)
+                    // Redirect to Stripe test checkout
                     window.location.href = 'https://buy.stripe.com/test_cNi9AV9b0auh0jqc5N8g000';
                 } catch (err) {
                     console.error('EmailJS failed:', err);

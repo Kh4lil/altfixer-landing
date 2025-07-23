@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "tailwind:init": "tailwindcss init",
+    "tailwind:build": "tailwindcss -i ./src-tailwind.css -o ./css/tailwind.min.css --minify --content './*.html'"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}
